@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SLUMBER LAND</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>SLUMBER LAND THE LAND OF JOY</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Rides</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2>Book Your Ride</h2>
+    <form onsubmit="handleBooking(event)">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+
+      <label for="date">Date</label>
+      <input type="date" id="date" required />
+
+      <button class="animated-btn" type="submit">Confirm Booking</button>
+    </form>
+
+    <div id="confirmation" style="display:none; margin-top:1rem; text-align:center; font-weight:bold; color:green;">
+      🎉 Thank you! Your tickets have been booked.
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Available Rides</h2>
+    <div class="rides" id="rideCards"></div>
+    <div class="cart-summary" id="cartDisplay">
+      <h3>Your Cart</h3>
+      <p>No items added yet.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SLUMBER LAND | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
